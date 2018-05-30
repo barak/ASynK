@@ -1,0 +1,6 @@
+/*.debhelper
+/*.log
+/*.substvars
+/asynk/
+/debhelper-build-stamp
+/files

@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with python2
+
+override_dh_auto_build: doc/asynk.info
+	dh_auto_build
+
+doc/asynk.info:
+	$(MAKE) -C $(dir $@) $(notdir $@)

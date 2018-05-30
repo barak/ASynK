@@ -1,0 +1,3 @@
+asynk_cmdline.py	/usr/lib/python2.7/dist-packages/asynk/
+lib/*.py		/usr/lib/python2.7/dist-packages/asynk/
+debian/bin/asynk	/usr/bin/

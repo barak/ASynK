@@ -1,0 +1,32 @@
+Source: asynk
+Section: editors
+Priority: optional
+Maintainer: Barak A. Pearlmutter <bap@debian.org>
+Build-Depends: debhelper (>= 11), dh-python,
+	python (>= 2.7),
+	texinfo
+X-Python-Version: 2.7
+Standards-Version: 4.2.1
+Homepage: https://asynk.io/
+Vcs-Git: https://salsa.debian.org/debian/ASynK.git
+Vcs-Browser: https://salsa.debian.org/debian/ASynK
+
+Package: asynk
+Architecture: all
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${python:Depends},
+	python-httplib2,
+	python-oauth2client,
+	python-openssl,
+	python-googleapi,
+	python-dateutil,
+	python-vobject,
+	python-gdata,
+Suggests: bbdb3
+Description: flexible contacts synchronization platform
+ ASynK—Awesome Sync (by Karra)—is a flexible Contacts synchronization
+ platform, which allows bidirectional sync of contacts between
+ supported sources: Google Contacts, Microsoft Exchange Server, any
+ CardDAV server, and Emacs BBDB.  Synchronization is granular to the
+ level of 'Folders', e.g., you can synchronize one folder of Google
+ Contacts with BBDB.
